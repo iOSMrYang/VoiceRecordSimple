@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VoiceRecordProgram.h"
+@interface ViewController : UIViewController{
 
-@interface ViewController : UIViewController
+   
+
+}
+@property (weak, nonatomic) IBOutlet UIButton *startBtn;
+@property (weak, nonatomic) IBOutlet UIButton *playBtn;
 
 
 @end

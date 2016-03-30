@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VoiceAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9d-sk-0ps">
+                    <rect key="frame" x="112" y="244" width="150" height="180"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yl-se-NMN">
+                            <rect key="frame" x="66" y="72" width="19" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手指上滑，取消发送" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGg-N8-LWE">
+                            <rect key="frame" x="0.0" y="8" width="150" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="取消发送" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54E-2c-zYK">
+                            <rect key="frame" x="0.0" y="180" width="150" height="17"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="IIZ-qk-GkA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.13" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="33X-LQ-doh"/>
+                        <constraint firstItem="MGg-N8-LWE" firstAttribute="top" secondItem="j9d-sk-0ps" secondAttribute="top" constant="8" id="5Kq-v8-0xn"/>
+                        <constraint firstItem="6Yl-se-NMN" firstAttribute="centerX" secondItem="j9d-sk-0ps" secondAttribute="centerX" id="6P9-Vr-cHn"/>
+                        <constraint firstAttribute="trailing" secondItem="MGg-N8-LWE" secondAttribute="trailing" id="BfZ-aW-6WW"/>
+                        <constraint firstItem="MGg-N8-LWE" firstAttribute="leading" secondItem="j9d-sk-0ps" secondAttribute="leading" id="DLW-Af-Fvr"/>
+                        <constraint firstItem="6Yl-se-NMN" firstAttribute="centerY" secondItem="j9d-sk-0ps" secondAttribute="centerY" id="KRd-U1-OJw"/>
+                        <constraint firstAttribute="height" constant="180" id="OyV-Ml-OxR"/>
+                        <constraint firstAttribute="bottom" secondItem="54E-2c-zYK" secondAttribute="bottom" constant="-17" id="bXT-Zb-kme"/>
+                        <constraint firstAttribute="trailing" secondItem="54E-2c-zYK" secondAttribute="trailing" id="slO-cS-md6"/>
+                        <constraint firstItem="54E-2c-zYK" firstAttribute="leading" secondItem="j9d-sk-0ps" secondAttribute="leading" id="zXx-E8-Hy6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.91372549020000005" green="0.65360300159999996" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="j9d-sk-0ps" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ECM-gc-QbE"/>
+                <constraint firstItem="j9d-sk-0ps" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="V3e-LM-WW3"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="cancelBottomHeight" destination="bXT-Zb-kme" id="Dos-eu-7sh"/>
+                <outlet property="cancelLabel" destination="54E-2c-zYK" id="kzl-kz-fFm"/>
+                <outlet property="childView" destination="j9d-sk-0ps" id="GHl-kL-KJg"/>
+                <outlet property="voiceLevelLabel" destination="6Yl-se-NMN" id="JhA-53-End"/>
+            </connections>
+        </view>
+    </objects>
+</document>

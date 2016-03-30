@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048E98FC1CAB7BF400020D2D /* VoiceRecordBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E98FB1CAB7BF400020D2D /* VoiceRecordBase.m */; };
+		048E99021CAB815B00020D2D /* VoiceRecordProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E99011CAB815B00020D2D /* VoiceRecordProgram.m */; };
+		048E99141CABB45D00020D2D /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 048E99061CABB45D00020D2D /* amrFileCodec.mm */; };
+		048E99151CABB45D00020D2D /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = 048E99081CABB45D00020D2D /* wav.mm */; };
+		048E99161CABB45D00020D2D /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 048E990A1CABB45D00020D2D /* libopencore-amrnb.a */; };
+		048E99171CABB45D00020D2D /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 048E990B1CABB45D00020D2D /* libopencore-amrwb.a */; };
+		048E99181CABB45D00020D2D /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 048E99131CABB45D00020D2D /* VoiceConverter.mm */; };
+		0A92693F5D3A4E9DBA59F8A4 /* Pods_VoiceView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABB50ED19B3E58FDADBB641 /* Pods_VoiceView.framework */; };
 		AEE576EC1CAA94D100927EF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE576EB1CAA94D100927EF1 /* main.m */; };
 		AEE576EF1CAA94D100927EF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE576EE1CAA94D100927EF1 /* AppDelegate.m */; };
 		AEE576F21CAA94D100927EF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE576F11CAA94D100927EF1 /* ViewController.m */; };
@@ -15,6 +23,10 @@
 		AEE576FA1CAA94D100927EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE576F81CAA94D100927EF1 /* LaunchScreen.storyboard */; };
 		AEE577051CAA94D100927EF1 /* VoiceViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE577041CAA94D100927EF1 /* VoiceViewTests.m */; };
 		AEE577101CAA94D100927EF1 /* VoiceViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE5770F1CAA94D100927EF1 /* VoiceViewUITests.m */; };
+		AEE577231CAAA93200927EF1 /* VoiceAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE577221CAAA93200927EF1 /* VoiceAlertView.m */; };
+		AEE577251CAAA94300927EF1 /* VoiceAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEE577241CAAA94300927EF1 /* VoiceAlertView.xib */; };
+		AEE577271CAABB7D00927EF1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE577261CAABB7D00927EF1 /* AVFoundation.framework */; };
+		AEE577291CAABB8A00927EF1 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE577281CAABB8A00927EF1 /* CoreAudio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		048E98FA1CAB7BF400020D2D /* VoiceRecordBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceRecordBase.h; sourceTree = "<group>"; };
+		048E98FB1CAB7BF400020D2D /* VoiceRecordBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceRecordBase.m; sourceTree = "<group>"; };
+		048E99001CAB815B00020D2D /* VoiceRecordProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceRecordProgram.h; sourceTree = "<group>"; };
+		048E99011CAB815B00020D2D /* VoiceRecordProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceRecordProgram.m; sourceTree = "<group>"; };
+		048E99051CABB45D00020D2D /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		048E99061CABB45D00020D2D /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		048E99071CABB45D00020D2D /* wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
+		048E99081CABB45D00020D2D /* wav.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wav.mm; sourceTree = "<group>"; };
+		048E990A1CABB45D00020D2D /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		048E990B1CABB45D00020D2D /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		048E990D1CABB45D00020D2D /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		048E990E1CABB45D00020D2D /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		048E99101CABB45D00020D2D /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		048E99111CABB45D00020D2D /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		048E99121CABB45D00020D2D /* VoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConverter.h; sourceTree = "<group>"; };
+		048E99131CABB45D00020D2D /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
+		1ABB50ED19B3E58FDADBB641 /* Pods_VoiceView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88321A77B6DEA6BB315CD84F /* Pods-VoiceView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceView.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoiceView/Pods-VoiceView.release.xcconfig"; sourceTree = "<group>"; };
 		AEE576E71CAA94D100927EF1 /* VoiceView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEE576EB1CAA94D100927EF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AEE576ED1CAA94D100927EF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +81,13 @@
 		AEE5770B1CAA94D100927EF1 /* VoiceViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEE5770F1CAA94D100927EF1 /* VoiceViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceViewUITests.m; sourceTree = "<group>"; };
 		AEE577111CAA94D100927EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEE577201CAAA6D700927EF1 /* VoiceView.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceView.pch; sourceTree = "<group>"; };
+		AEE577211CAAA93200927EF1 /* VoiceAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceAlertView.h; sourceTree = "<group>"; };
+		AEE577221CAAA93200927EF1 /* VoiceAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceAlertView.m; sourceTree = "<group>"; };
+		AEE577241CAAA94300927EF1 /* VoiceAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceAlertView.xib; sourceTree = "<group>"; };
+		AEE577261CAABB7D00927EF1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AEE577281CAABB8A00927EF1 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		B38A70D6ABBC8BED3C000F00 /* Pods-VoiceView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoiceView/Pods-VoiceView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +95,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE577291CAABB8A00927EF1 /* CoreAudio.framework in Frameworks */,
+				048E99171CABB45D00020D2D /* libopencore-amrwb.a in Frameworks */,
+				048E99161CABB45D00020D2D /* libopencore-amrnb.a in Frameworks */,
+				AEE577271CAABB7D00927EF1 /* AVFoundation.framework in Frameworks */,
+				0A92693F5D3A4E9DBA59F8A4 /* Pods_VoiceView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +120,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0323AF1E1DB53CCF67F589CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B38A70D6ABBC8BED3C000F00 /* Pods-VoiceView.debug.xcconfig */,
+				88321A77B6DEA6BB315CD84F /* Pods-VoiceView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		048E99031CABB45D00020D2D /* VoiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				048E99041CABB45D00020D2D /* amrwapper */,
+				048E99091CABB45D00020D2D /* lib */,
+				048E990C1CABB45D00020D2D /* opencore-amrnb */,
+				048E990F1CABB45D00020D2D /* opencore-amrwb */,
+				048E99121CABB45D00020D2D /* VoiceConverter.h */,
+				048E99131CABB45D00020D2D /* VoiceConverter.mm */,
+			);
+			path = VoiceConvert;
+			sourceTree = "<group>";
+		};
+		048E99041CABB45D00020D2D /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				048E99051CABB45D00020D2D /* amrFileCodec.h */,
+				048E99061CABB45D00020D2D /* amrFileCodec.mm */,
+				048E99071CABB45D00020D2D /* wav.h */,
+				048E99081CABB45D00020D2D /* wav.mm */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		048E99091CABB45D00020D2D /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				048E990A1CABB45D00020D2D /* libopencore-amrnb.a */,
+				048E990B1CABB45D00020D2D /* libopencore-amrwb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		048E990C1CABB45D00020D2D /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				048E990D1CABB45D00020D2D /* interf_dec.h */,
+				048E990E1CABB45D00020D2D /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		048E990F1CABB45D00020D2D /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				048E99101CABB45D00020D2D /* dec_if.h */,
+				048E99111CABB45D00020D2D /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		1E71687E38ECA170BDC1C534 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEE577281CAABB8A00927EF1 /* CoreAudio.framework */,
+				AEE577261CAABB7D00927EF1 /* AVFoundation.framework */,
+				1ABB50ED19B3E58FDADBB641 /* Pods_VoiceView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AEE576DE1CAA94D000927EF1 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +197,8 @@
 				AEE577031CAA94D100927EF1 /* VoiceViewTests */,
 				AEE5770E1CAA94D100927EF1 /* VoiceViewUITests */,
 				AEE576E81CAA94D100927EF1 /* Products */,
+				0323AF1E1DB53CCF67F589CC /* Pods */,
+				1E71687E38ECA170BDC1C534 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +215,18 @@
 		AEE576E91CAA94D100927EF1 /* VoiceView */ = {
 			isa = PBXGroup;
 			children = (
+				048E99031CABB45D00020D2D /* VoiceConvert */,
 				AEE576ED1CAA94D100927EF1 /* AppDelegate.h */,
 				AEE576EE1CAA94D100927EF1 /* AppDelegate.m */,
 				AEE576F01CAA94D100927EF1 /* ViewController.h */,
 				AEE576F11CAA94D100927EF1 /* ViewController.m */,
+				048E98FA1CAB7BF400020D2D /* VoiceRecordBase.h */,
+				048E98FB1CAB7BF400020D2D /* VoiceRecordBase.m */,
+				048E99001CAB815B00020D2D /* VoiceRecordProgram.h */,
+				048E99011CAB815B00020D2D /* VoiceRecordProgram.m */,
+				AEE577211CAAA93200927EF1 /* VoiceAlertView.h */,
+				AEE577221CAAA93200927EF1 /* VoiceAlertView.m */,
+				AEE577241CAAA94300927EF1 /* VoiceAlertView.xib */,
 				AEE576F31CAA94D100927EF1 /* Main.storyboard */,
 				AEE576F61CAA94D100927EF1 /* Assets.xcassets */,
 				AEE576F81CAA94D100927EF1 /* LaunchScreen.storyboard */,
@@ -118,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				AEE576EB1CAA94D100927EF1 /* main.m */,
+				AEE577201CAAA6D700927EF1 /* VoiceView.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,9 +270,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEE577141CAA94D100927EF1 /* Build configuration list for PBXNativeTarget "VoiceView" */;
 			buildPhases = (
+				E23D6F66B5A24BEE04F46700 /* Check Pods Manifest.lock */,
 				AEE576E31CAA94D100927EF1 /* Sources */,
 				AEE576E41CAA94D100927EF1 /* Frameworks */,
 				AEE576E51CAA94D100927EF1 /* Resources */,
+				9998E1F808AADB28C0FA6424 /* Embed Pods Frameworks */,
+				E8CF49A39A686F4A9A66356E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE577251CAAA94300927EF1 /* VoiceAlertView.xib in Resources */,
 				AEE576FA1CAA94D100927EF1 /* LaunchScreen.storyboard in Resources */,
 				AEE576F71CAA94D100927EF1 /* Assets.xcassets in Resources */,
 				AEE576F51CAA94D100927EF1 /* Main.storyboard in Resources */,
@@ -265,14 +392,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9998E1F808AADB28C0FA6424 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoiceView/Pods-VoiceView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E23D6F66B5A24BEE04F46700 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E8CF49A39A686F4A9A66356E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoiceView/Pods-VoiceView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AEE576E31CAA94D100927EF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048E99141CABB45D00020D2D /* amrFileCodec.mm in Sources */,
+				048E98FC1CAB7BF400020D2D /* VoiceRecordBase.m in Sources */,
 				AEE576F21CAA94D100927EF1 /* ViewController.m in Sources */,
+				048E99181CABB45D00020D2D /* VoiceConverter.mm in Sources */,
 				AEE576EF1CAA94D100927EF1 /* AppDelegate.m in Sources */,
+				048E99151CABB45D00020D2D /* wav.mm in Sources */,
 				AEE576EC1CAA94D100927EF1 /* main.m in Sources */,
+				048E99021CAB815B00020D2D /* VoiceRecordProgram.m in Sources */,
+				AEE577231CAAA93200927EF1 /* VoiceAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,10 +592,17 @@
 		};
 		AEE577151CAA94D100927EF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B38A70D6ABBC8BED3C000F00 /* Pods-VoiceView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VoiceView/VoiceView.pch";
 				INFOPLIST_FILE = VoiceView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VoiceView/VoiceConvert/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = YJ.VoiceView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -422,10 +610,17 @@
 		};
 		AEE577161CAA94D100927EF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88321A77B6DEA6BB315CD84F /* Pods-VoiceView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VoiceView/VoiceView.pch";
 				INFOPLIST_FILE = VoiceView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VoiceView/VoiceConvert/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = YJ.VoiceView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -498,6 +693,7 @@
 				AEE577161CAA94D100927EF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEE577171CAA94D100927EF1 /* Build configuration list for PBXNativeTarget "VoiceViewTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +702,7 @@
 				AEE577191CAA94D100927EF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEE5771A1CAA94D100927EF1 /* Build configuration list for PBXNativeTarget "VoiceViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +711,7 @@
 				AEE5771C1CAA94D100927EF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
